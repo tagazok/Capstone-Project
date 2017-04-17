@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dip"
+     >
+
+    <ImageView
+        android:id="@+id/book_cover"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_marginRight="6dip"
+        android:contentDescription="@string/label_cover"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/book_cover"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/book_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/label_title"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/book_authors"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/label_authors"
+            android:textSize="12sp"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/book_publisher"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/label_publisher"
+            android:textSize="12sp"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"/>
+
+</RelativeLayout>

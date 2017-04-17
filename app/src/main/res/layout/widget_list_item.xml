@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dip"
+    android:background="@color/colorPrimary"
+    >
+
+    <ImageView
+        android:id="@+id/book_cover"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_marginRight="6dip"
+        android:contentDescription="Book cover"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/widget_single_chore_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/book_cover"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/book_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cacaca"/>
+
+</RelativeLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/book_cover"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_marginRight="6dip"
+        android:contentDescription="@string/label_cover"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout
+        android:id="@+id/widget_single_chore_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/book_cover"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/book_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/label_title"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

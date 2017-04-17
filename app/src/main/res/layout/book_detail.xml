@@ -1,0 +1,80 @@
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="com.leplus.mybooklibrary.BookDetailFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/book_title"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/title_book_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/label_description" />
+    <TextView
+        android:id="@+id/book_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/title_book_authors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/label_authors"/>
+    <TextView
+        android:id="@+id/book_authors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/title_book_publisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/label_publisher"/>
+    <TextView
+        android:id="@+id/book_publisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/title_book_publishedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/label_published_date"/>
+    <TextView
+        android:id="@+id/book_publishedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/black" />
+
+    <!--<ImageView
+        android:id="@+id/book_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <Button
+        android:id="@+id/button_remove_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/remove" />
+</LinearLayout>
+
